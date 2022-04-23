@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/menu"
+    android:background="@drawable/manual"
     tools:context=".ManualActivity">
 
     <Button
@@ -16,8 +16,127 @@
         android:layout_marginEnd="307dp"
         android:backgroundTint="@color/teal_700"
         android:text="Menu"
+        app:cornerRadius="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <SeekBar
+        android:id="@+id/bar_ex"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="155dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="36dp"
+        android:max="3"
+        android:progress="0"
+        app:layout_constraintBottom_toBottomOf="@+id/bar_pump"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/bar_pump"
+        app:layout_constraintTop_toTopOf="@+id/bar_pump"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <SeekBar
+        android:id="@+id/bar_pump"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="155dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="16dp"
+        android:max="3"
+        android:progress="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.383" />
+
+    <Button
+        android:id="@+id/lighton"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="123dp"
+        android:backgroundTint="@color/teal_700"
+        android:fontFamily="casual"
+        android:text="ON"
+        android:textSize="16sp"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.561" />
+
+    <Button
+        android:id="@+id/lightoff"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:backgroundTint="@color/teal_700"
+        android:fontFamily="casual"
+        android:text="OFF"
+        android:textSize="16sp"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/lighton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.148"
+        app:layout_constraintStart_toEndOf="@+id/lighton"
+        app:layout_constraintTop_toTopOf="@+id/lighton"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/pumpon"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="@color/teal_700"
+        android:fontFamily="casual"
+        android:text="ON"
+        android:textSize="16sp"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.322" />
+
+    <Button
+        android:id="@+id/pumpoff"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="25dp"
+        android:backgroundTint="@color/teal_700"
+        android:fontFamily="casual"
+        android:text="OFF"
+        android:textSize="16sp"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/pumpon"
+        app:layout_constraintStart_toEndOf="@+id/pumpon"
+        app:layout_constraintTop_toTopOf="@+id/pumpon" />
+
+    <Button
+        android:id="@+id/fanon"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="48dp"
+        android:backgroundTint="@color/teal_700"
+        android:fontFamily="casual"
+        android:text="ON"
+        android:textSize="16sp"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pumpoff"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.322" />
+
+    <Button
+        android:id="@+id/fanoff"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="25dp"
+        android:backgroundTint="@color/teal_700"
+        android:fontFamily="casual"
+        android:text="OFF"
+        android:textSize="16sp"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fanon"
+        app:layout_constraintStart_toEndOf="@+id/fanon"
+        app:layout_constraintTop_toTopOf="@+id/fanon"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
