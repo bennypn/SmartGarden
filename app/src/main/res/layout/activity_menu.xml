@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mode"
+    tools:context=".MenuActivity">
+
+    <Button
+        android:id="@+id/manual_btn"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="72dp"
+        android:backgroundTint="@color/teal_700"
+        android:fontFamily="casual"
+        android:text="Manual"
+        android:textSize="24sp"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/otomatis_btn"
+        app:layout_constraintEnd_toEndOf="@+id/otomatis_btn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/otomatis_btn" />
+
+    <Button
+        android:id="@+id/otomatis_btn"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="72dp"
+        android:backgroundTint="@color/teal_700"
+        android:fontFamily="casual"
+        android:text="Otomatis"
+        android:textSize="24sp"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/status_btn"
+        app:layout_constraintEnd_toEndOf="@+id/status_btn"
+        app:layout_constraintStart_toStartOf="@+id/status_btn" />
+
+    <Button
+        android:id="@+id/status_btn"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="196dp"
+        android:backgroundTint="@color/teal_700"
+        android:fontFamily="casual"
+        android:text="Status"
+        android:textSize="24sp"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

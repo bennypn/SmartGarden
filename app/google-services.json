@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "450724147434",
+    "firebase_url": "https://ta-alvi-indira-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "ta-alvi-indira",
+    "storage_bucket": "ta-alvi-indira.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:450724147434:android:e8f74b6cd794ceeff6a793",
+        "android_client_info": {
+          "package_name": "com.example.smartgarden"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "450724147434-pb2no3s08902lem60n408qculr3u2fmd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiClcDSiCyhAk_oNWb7tWJ0GcJHyMPpKM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "450724147434-pb2no3s08902lem60n408qculr3u2fmd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
